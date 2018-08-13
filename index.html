@@ -12,10 +12,15 @@
     	<div class="content">
         This is the glorious text-content!
       </div>
-      <button onclick="alert('hello world')">Click me</button>
     </div>
+    <button id="btn">Click me</button>
   </body>
   <script type="text/javascript">
+
+    const btn = document.querySelector('#btn')
+    btn.onclick = () => {
+      alert('hello world')
+    }
 
     const para = document.createElement('p')
     para.style.color = 'red'
